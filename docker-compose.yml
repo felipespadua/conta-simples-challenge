@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  app:
+    build: .
+    command: npm start 
+    ports: 
+      - "3000:3000"
+    volumes:
+      - .:/usr/app
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: contasimples
+      POSTGRES_PASSWORD: contasimples
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080

@@ -1,0 +1,22 @@
+{
+  "name": "conta-simples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/felipespadua/conta-simples-challenge.git",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2",
+    "pg": "^7.15.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.3"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^5.5.1"
+  }
+}
