@@ -12,7 +12,6 @@ app.use(bodyParser.urlencoded({
   extended: false
 }));
 
-app.use(routes)
 
 
 app.on('error', error => {
@@ -32,6 +31,8 @@ app.on('error', error => {
       throw error;
   }
 });
+
+app.use(routes)
 
 app.listen(process.env.PORT, () => {
   console.log(`Listening on http://localhost:${process.env.PORT}`);
